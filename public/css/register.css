@@ -1,0 +1,49 @@
+.container fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.container legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.control {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button {
+    background-color: #1259c3;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #0022AA;
+}
+
+.user-profile-items {
+    width: 50%;
+}
+
+
+
+@media (min-width: 769px) {
+    .container fieldset {
+        width: 60vw;
+        margin: 15px auto;
+    }
+}

@@ -1,0 +1,232 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/***********************    ETIQUETAS   ***********************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/****  FOOTER  ****/
+
+footer {
+    background-color: white;
+    padding: 40px;
+}
+
+footer section div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer section div i {
+    font-size: 2em;
+    margin-bottom: 10;
+    color: #1259c3;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+/***********************    CLASES    ***********************/
+
+/****  HEADER  ****/
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 48%;
+}
+
+/* Barra de busqueda */
+
+.search-bar {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Icono de buscar */
+
+.search {
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Menu de navegacion */
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.burger-menu {
+    background-color: #03264C;
+    color: #fff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto 5px auto;
+}
+
+/****  MAIN  ****/
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 240px;
+}
+
+/***********************    MEDIA QUERIES    ***********************/
+
+/*** TABLETS ***/
+
+@media (min-width: 361px) {
+    
+    /* HEADER */
+
+    .main-header-top-bar {
+        justify-content: space-between;
+    }
+
+    .logo, .search-bar, .copy-header {
+        width: 30%;
+    }
+
+    /* Menu de navegacion */
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+}
+
+/*** DESKTOP ***/
+
+@media (min-width: 769px) {
+
+    /* HEADER */
+
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .copy-header {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    /* Menu de navegacion */
+
+    .main-navbar {
+        margin-top: 30px;
+    }
+
+    .main-navbar li {
+        margin: 0 10px
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+
+    /* FOOTER */
+
+    footer section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer section div {
+        width: 25%;
+        margin-bottom: 50px;
+    }
+
+    footer section div i:hover {
+        color: #03264C;
+    }
+}
