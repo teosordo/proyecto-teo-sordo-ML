@@ -1,3 +1,5 @@
+/* FORMULARIO */
+
 .container fieldset {
     border: none;
     margin-bottom: 15px;
@@ -9,6 +11,8 @@
     padding: 8px;
     border-radius: 5px;
 }
+
+/* BOTONES */
 
 .form-button {
     background-color: #1259c3;
@@ -25,7 +29,14 @@
     background-color: #0022AA;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 769px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+    
     .container fieldset {
         width: 60vw;
         margin: 15px auto;

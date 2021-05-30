@@ -1,8 +1,6 @@
 /***********************    ETIQUETAS   ***********************/
 
-/****   ARTÍCULOS   ****/
-
-main section {
+main > section {
     margin-bottom: 40px;
 }
 
@@ -17,7 +15,7 @@ article {
     transition: box-shadow 0.5s;
 }
 
-article:hover {
+main article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
@@ -42,18 +40,14 @@ main section article i {
     top: -15px;
 }
 
+/* Animación */
 @keyframes rotar {
-    /***************    PREGUNTAR   */
-    /*0% {
-        transform: rotateZ(0deg);
-    }*/
-
     100% {
         transform: rotateZ(360deg);
     }
 }
 
-article:hover > .producto-elementos .envio i {
+article:hover > .producto-elementos i {
     animation: rotar 0.5s;
 }
 
@@ -64,7 +58,7 @@ p {
 /***********************    CLASES   ***********************/
 
 .banner {
-    width: 100vw;
+    margin-bottom: 40px;
 }
 
 .titular {
@@ -135,13 +129,6 @@ article:hover > .descripcion {
 /*** DESKTOP ***/
 
 @media (min-width: 769px) {
-    
-    .article-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 
     .article-container article {
         flex-basis: 22%;

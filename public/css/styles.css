@@ -30,12 +30,12 @@ footer {
     padding: 40px;
 }
 
-footer section div {
+footer section article {
     text-align: center;
     margin-bottom: 20px;
 }
 
-footer section div i {
+footer section article i {
     font-size: 2em;
     margin-bottom: 10;
     color: #1259c3;
@@ -221,12 +221,12 @@ footer section div i {
         justify-content: space-around;
     }
 
-    footer section div {
+    footer section article {
         width: 25%;
         margin-bottom: 50px;
     }
 
-    footer section div i:hover {
+    footer section article i:hover {
         color: #03264C;
     }
 }

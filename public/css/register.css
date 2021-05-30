@@ -1,3 +1,5 @@
+/* FROMULARIO */
+
 .container fieldset {
     border: none;
     margin-bottom: 15px;
@@ -20,6 +22,8 @@
     flex-direction: column;
 }
 
+/* BOTONES */
+
 .form-button {
     background-color: #1259c3;
     color: #fff;
@@ -35,11 +39,7 @@
     background-color: #0022AA;
 }
 
-.user-profile-items {
-    width: 50%;
-}
-
-
+/**** MEDIA QUERIES ****/
 
 @media (min-width: 769px) {
     .container fieldset {
